@@ -13,10 +13,10 @@ import string
 logging.basicConfig(filename='bot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7201585929:AAFx-j2vHLC_YplL-_nLaajQPvOsbA58ZsE')
+bot = telebot.TeleBot('7353619651:AAGo1FL6kjhhX3duCiD5SX42PIZ6m9Q-oKU')
 # Owner and admin user IDs
-owner_id = "1301017655"
-admin_ids = ["ADMIN_ID1", "ADMIN_ID2"]
+owner_id = "5344482379"
+admin_ids = ["5344482379"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -112,7 +112,7 @@ def get_current_time():
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     response = (
-        f"🌟 Welcome to the YAMRAJ DDOS Bot! 🌟\n\n"
+        f"🌟 Welcome to the NAUGHTY DDOS Bot! 🌟\n\n"
         f"Current Time: {get_current_time()}\n\n"
         "Here are some commands you can use:\n"
         "👤 /approveuser <id> <duration> - Approve a user for a certain duration (day, week, month)\n"
@@ -286,7 +286,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
             
-    response = f"🚀Attack Sent Successfully! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: YAMRAJ-VIP\n\n🔥Status: Attack in Progress... 🔥"
+    response = f"🚀Attack Sent Successfully! 🚀\n\n🗿𝐓𝐚𝐫𝐠𝐞𝐭: {target}:{port}\n🕦Attack Duration: {time}\n💣Method: NAUGHTY-VIP\n\n🔥Status: Attack in Progress... 🔥"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -330,14 +330,14 @@ def handle_attack(message):
     else:
         response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /attack command. "
                     "To gain access and unleash the power of attacks, you can:\n\n👉 Contact an Admin or the Owner for approval.\n"
-                    "🌟THE ONLY OWNER IS @THE_YAMRAJ DM TO BUY ACCESS")
+                    "🌟THE ONLY OWNER IS @Naughtyxd DM TO BUY ACCESS")
 
     bot.reply_to(message, response)
 
 # message_handler(func=lambda message: True)
 def handle_unknown_command(message):
     response = (
-        f"🌟 Welcome to the YAMRAJ DDOS Bot! 🌟\n\n"
+        f"🌟 Welcome to the NAUGHTY DDOS Bot! 🌟\n\n"
         f"Current Time: {get_current_time()}\n\n"
         "Here are some commands you can use:\n"
         "❌ /removeuser <id> - Remove a user\n"
@@ -361,7 +361,6 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED @THEYAMRAJOFFICIAL OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
