@@ -13,10 +13,10 @@ import string
 logging.basicConfig(filename='bot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7353619651:AAGo1FL6kjhhX3duCiD5SX42PIZ6m9Q-oKU')
+bot = telebot.TeleBot('7387018177:AAGrXfQZUBRAW5VFCjQplJJIhJ_EFPiXJo0')
 # Owner and admin user IDs
-owner_id = "5344482379"
-admin_ids = ["5344482379"]
+owner_id = "1938139878"
+admin_ids = ["1938139878"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
